@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #-*- coding: utf-8 -*-
 """
-Author: liuyang@domob.cn
+Author: liuyang@xxx.cn
 Created Time: 2017-10-23 14:35:41
 """
 
@@ -18,10 +18,10 @@ from django.conf import settings
 from amazon_advertising_api.amazon_advertising_api import AmazonAdvertisingApi
 
 #thrift
-from domob_pyutils.thriftext import TThriftClientPool
-from domob_thrift.houyi_common_types.ttypes import *
-from domob_thrift.houyi_info_server_types.ttypes import *
-from domob_thrift.houyi_info_server_service import InfoServer
+from xxx_pyutils.thriftext import TThriftClientPool
+from xxx_thrift.houyi_common_types.ttypes import *
+from xxx_thrift.houyi_info_server_types.ttypes import *
+from xxx_thrift.houyi_info_server_service import InfoServer
 
 
 

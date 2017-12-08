@@ -16,8 +16,8 @@ from thrift.transport import TSocket
 from thrift.transport import THttpClient
 from thrift.protocol import TBinaryProtocol
 
-from domob_thrift.houyi_info_server_service import InfoServer
-from domob_thrift.houyi_info_server_service.ttypes import *
+from xxx_thrift.houyi_info_server_service import InfoServer
+from xxx_thrift.houyi_info_server_service.ttypes import *
 
 if len(sys.argv) <= 1 or sys.argv[1] == '--help':
   print ''

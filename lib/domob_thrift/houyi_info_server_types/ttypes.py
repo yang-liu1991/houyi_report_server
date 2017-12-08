@@ -8,7 +8,7 @@
 #
 
 from thrift.Thrift import TType, TMessageType, TException, TApplicationException
-import domob_thrift.houyi_common_types.ttypes
+import xxx_thrift.houyi_common_types.ttypes
 
 
 from thrift.transport import TTransport
@@ -53,7 +53,7 @@ class GetAccessTokenResp(object):
 
   thrift_spec = (
     None, # 0
-    (1, TType.STRUCT, 'respHeader', (domob_thrift.houyi_common_types.ttypes.RespHeader, domob_thrift.houyi_common_types.ttypes.RespHeader.thrift_spec), None, ), # 1
+    (1, TType.STRUCT, 'respHeader', (xxx_thrift.houyi_common_types.ttypes.RespHeader, xxx_thrift.houyi_common_types.ttypes.RespHeader.thrift_spec), None, ), # 1
     (2, TType.STRING, 'token', None, None, ), # 2
   )
 
@@ -72,7 +72,7 @@ class GetAccessTokenResp(object):
         break
       if fid == 1:
         if ftype == TType.STRUCT:
-          self.respHeader = domob_thrift.houyi_common_types.ttypes.RespHeader()
+          self.respHeader = xxx_thrift.houyi_common_types.ttypes.RespHeader()
           self.respHeader.read(iprot)
         else:
           iprot.skip(ftype)
@@ -524,7 +524,7 @@ class KeywordResopnse(object):
 
   thrift_spec = (
     None, # 0
-    (1, TType.STRUCT, 'header', (domob_thrift.houyi_common_types.ttypes.RespHeader, domob_thrift.houyi_common_types.ttypes.RespHeader.thrift_spec), None, ), # 1
+    (1, TType.STRUCT, 'header', (xxx_thrift.houyi_common_types.ttypes.RespHeader, xxx_thrift.houyi_common_types.ttypes.RespHeader.thrift_spec), None, ), # 1
     (2, TType.LIST, 'failedKeywordInfos', (TType.STRUCT,(KeywordInfo, KeywordInfo.thrift_spec)), None, ), # 2
   )
 
@@ -543,7 +543,7 @@ class KeywordResopnse(object):
         break
       if fid == 1:
         if ftype == TType.STRUCT:
-          self.header = domob_thrift.houyi_common_types.ttypes.RespHeader()
+          self.header = xxx_thrift.houyi_common_types.ttypes.RespHeader()
           self.header.read(iprot)
         else:
           iprot.skip(ftype)
@@ -608,7 +608,7 @@ class NegativeKeywordResopnse(object):
 
   thrift_spec = (
     None, # 0
-    (1, TType.STRUCT, 'header', (domob_thrift.houyi_common_types.ttypes.RespHeader, domob_thrift.houyi_common_types.ttypes.RespHeader.thrift_spec), None, ), # 1
+    (1, TType.STRUCT, 'header', (xxx_thrift.houyi_common_types.ttypes.RespHeader, xxx_thrift.houyi_common_types.ttypes.RespHeader.thrift_spec), None, ), # 1
     (2, TType.LIST, 'failedNegativeKeywordInfos', (TType.STRUCT,(NegativeKeywordInfo, NegativeKeywordInfo.thrift_spec)), None, ), # 2
   )
 
@@ -627,7 +627,7 @@ class NegativeKeywordResopnse(object):
         break
       if fid == 1:
         if ftype == TType.STRUCT:
-          self.header = domob_thrift.houyi_common_types.ttypes.RespHeader()
+          self.header = xxx_thrift.houyi_common_types.ttypes.RespHeader()
           self.header.read(iprot)
         else:
           iprot.skip(ftype)
@@ -692,7 +692,7 @@ class CampaignNegativeKeywordResponse(object):
 
   thrift_spec = (
     None, # 0
-    (1, TType.STRUCT, 'header', (domob_thrift.houyi_common_types.ttypes.RespHeader, domob_thrift.houyi_common_types.ttypes.RespHeader.thrift_spec), None, ), # 1
+    (1, TType.STRUCT, 'header', (xxx_thrift.houyi_common_types.ttypes.RespHeader, xxx_thrift.houyi_common_types.ttypes.RespHeader.thrift_spec), None, ), # 1
     (2, TType.LIST, 'failedCampaignNegativeKeywordInfos', (TType.STRUCT,(CampaignNegativeKeywordInfo, CampaignNegativeKeywordInfo.thrift_spec)), None, ), # 2
   )
 
@@ -711,7 +711,7 @@ class CampaignNegativeKeywordResponse(object):
         break
       if fid == 1:
         if ftype == TType.STRUCT:
-          self.header = domob_thrift.houyi_common_types.ttypes.RespHeader()
+          self.header = xxx_thrift.houyi_common_types.ttypes.RespHeader()
           self.header.read(iprot)
         else:
           iprot.skip(ftype)

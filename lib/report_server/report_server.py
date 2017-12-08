@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #-*- coding: utf-8 -*-
 """
-Author: liuyang@domob.cn
+Author: liuyang@xxx.cn
 Created Time: 2017-10-20 14:35:41
 """
 

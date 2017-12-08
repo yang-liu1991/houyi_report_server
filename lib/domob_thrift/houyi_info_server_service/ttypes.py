@@ -8,8 +8,8 @@
 #
 
 from thrift.Thrift import TType, TMessageType, TException, TApplicationException
-import domob_thrift.houyi_common_types.ttypes
-import domob_thrift.houyi_info_server_types.ttypes
+import xxx_thrift.houyi_common_types.ttypes
+import xxx_thrift.houyi_info_server_types.ttypes
 
 
 from thrift.transport import TTransport

@@ -115,7 +115,7 @@ LOGGING = {
         }
     },
     'handlers': {
-        'domob_pyutils': {
+        'xxx_pyutils': {
             'level': 'DEBUG',
             'class': 'logging.StreamHandler',
         },
@@ -199,8 +199,8 @@ LOGGING = {
             'level': 'DEBUG',
             'propagate': False,
         },
-        'domob_pyutils': {
-            'handlers': ['domob_pyutils'],
+        'xxx_pyutils': {
+            'handlers': ['xxx_pyutils'],
             'level': 'DEBUG',
             'propagate': False,
         },

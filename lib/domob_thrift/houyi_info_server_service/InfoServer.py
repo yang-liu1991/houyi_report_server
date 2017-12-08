@@ -295,7 +295,7 @@ class getAccessToken_args(object):
 
   thrift_spec = (
     None, # 0
-    (1, TType.STRUCT, 'reqHeader', (domob_thrift.houyi_common_types.ttypes.ReqHeader, domob_thrift.houyi_common_types.ttypes.ReqHeader.thrift_spec), None, ), # 1
+    (1, TType.STRUCT, 'reqHeader', (xxx_thrift.houyi_common_types.ttypes.ReqHeader, xxx_thrift.houyi_common_types.ttypes.ReqHeader.thrift_spec), None, ), # 1
   )
 
   def __init__(self, reqHeader=None,):
@@ -312,7 +312,7 @@ class getAccessToken_args(object):
         break
       if fid == 1:
         if ftype == TType.STRUCT:
-          self.reqHeader = domob_thrift.houyi_common_types.ttypes.ReqHeader()
+          self.reqHeader = xxx_thrift.houyi_common_types.ttypes.ReqHeader()
           self.reqHeader.read(iprot)
         else:
           iprot.skip(ftype)
@@ -355,7 +355,7 @@ class getAccessToken_result(object):
   """
 
   thrift_spec = (
-    (0, TType.STRUCT, 'success', (domob_thrift.houyi_info_server_types.ttypes.GetAccessTokenResp, domob_thrift.houyi_info_server_types.ttypes.GetAccessTokenResp.thrift_spec), None, ), # 0
+    (0, TType.STRUCT, 'success', (xxx_thrift.houyi_info_server_types.ttypes.GetAccessTokenResp, xxx_thrift.houyi_info_server_types.ttypes.GetAccessTokenResp.thrift_spec), None, ), # 0
   )
 
   def __init__(self, success=None,):
@@ -372,7 +372,7 @@ class getAccessToken_result(object):
         break
       if fid == 0:
         if ftype == TType.STRUCT:
-          self.success = domob_thrift.houyi_info_server_types.ttypes.GetAccessTokenResp()
+          self.success = xxx_thrift.houyi_info_server_types.ttypes.GetAccessTokenResp()
           self.success.read(iprot)
         else:
           iprot.skip(ftype)
@@ -418,8 +418,8 @@ class Keyword_args(object):
 
   thrift_spec = (
     None, # 0
-    (1, TType.STRUCT, 'reqHeader', (domob_thrift.houyi_common_types.ttypes.ReqHeader, domob_thrift.houyi_common_types.ttypes.ReqHeader.thrift_spec), None, ), # 1
-    (2, TType.LIST, 'keywordInfos', (TType.STRUCT,(domob_thrift.houyi_info_server_types.ttypes.KeywordInfo, domob_thrift.houyi_info_server_types.ttypes.KeywordInfo.thrift_spec)), None, ), # 2
+    (1, TType.STRUCT, 'reqHeader', (xxx_thrift.houyi_common_types.ttypes.ReqHeader, xxx_thrift.houyi_common_types.ttypes.ReqHeader.thrift_spec), None, ), # 1
+    (2, TType.LIST, 'keywordInfos', (TType.STRUCT,(xxx_thrift.houyi_info_server_types.ttypes.KeywordInfo, xxx_thrift.houyi_info_server_types.ttypes.KeywordInfo.thrift_spec)), None, ), # 2
     (3, TType.I32, 'operation', None, None, ), # 3
   )
 
@@ -439,7 +439,7 @@ class Keyword_args(object):
         break
       if fid == 1:
         if ftype == TType.STRUCT:
-          self.reqHeader = domob_thrift.houyi_common_types.ttypes.ReqHeader()
+          self.reqHeader = xxx_thrift.houyi_common_types.ttypes.ReqHeader()
           self.reqHeader.read(iprot)
         else:
           iprot.skip(ftype)
@@ -448,7 +448,7 @@ class Keyword_args(object):
           self.keywordInfos = []
           (_etype3, _size0) = iprot.readListBegin()
           for _i4 in xrange(_size0):
-            _elem5 = domob_thrift.houyi_info_server_types.ttypes.KeywordInfo()
+            _elem5 = xxx_thrift.houyi_info_server_types.ttypes.KeywordInfo()
             _elem5.read(iprot)
             self.keywordInfos.append(_elem5)
           iprot.readListEnd()
@@ -509,7 +509,7 @@ class Keyword_result(object):
   """
 
   thrift_spec = (
-    (0, TType.STRUCT, 'success', (domob_thrift.houyi_info_server_types.ttypes.KeywordResopnse, domob_thrift.houyi_info_server_types.ttypes.KeywordResopnse.thrift_spec), None, ), # 0
+    (0, TType.STRUCT, 'success', (xxx_thrift.houyi_info_server_types.ttypes.KeywordResopnse, xxx_thrift.houyi_info_server_types.ttypes.KeywordResopnse.thrift_spec), None, ), # 0
   )
 
   def __init__(self, success=None,):
@@ -526,7 +526,7 @@ class Keyword_result(object):
         break
       if fid == 0:
         if ftype == TType.STRUCT:
-          self.success = domob_thrift.houyi_info_server_types.ttypes.KeywordResopnse()
+          self.success = xxx_thrift.houyi_info_server_types.ttypes.KeywordResopnse()
           self.success.read(iprot)
         else:
           iprot.skip(ftype)
@@ -572,8 +572,8 @@ class NegativeKeyword_args(object):
 
   thrift_spec = (
     None, # 0
-    (1, TType.STRUCT, 'reqHeader', (domob_thrift.houyi_common_types.ttypes.ReqHeader, domob_thrift.houyi_common_types.ttypes.ReqHeader.thrift_spec), None, ), # 1
-    (2, TType.LIST, 'keywordInfos', (TType.STRUCT,(domob_thrift.houyi_info_server_types.ttypes.KeywordInfo, domob_thrift.houyi_info_server_types.ttypes.KeywordInfo.thrift_spec)), None, ), # 2
+    (1, TType.STRUCT, 'reqHeader', (xxx_thrift.houyi_common_types.ttypes.ReqHeader, xxx_thrift.houyi_common_types.ttypes.ReqHeader.thrift_spec), None, ), # 1
+    (2, TType.LIST, 'keywordInfos', (TType.STRUCT,(xxx_thrift.houyi_info_server_types.ttypes.KeywordInfo, xxx_thrift.houyi_info_server_types.ttypes.KeywordInfo.thrift_spec)), None, ), # 2
     (3, TType.I32, 'operation', None, None, ), # 3
   )
 
@@ -593,7 +593,7 @@ class NegativeKeyword_args(object):
         break
       if fid == 1:
         if ftype == TType.STRUCT:
-          self.reqHeader = domob_thrift.houyi_common_types.ttypes.ReqHeader()
+          self.reqHeader = xxx_thrift.houyi_common_types.ttypes.ReqHeader()
           self.reqHeader.read(iprot)
         else:
           iprot.skip(ftype)
@@ -602,7 +602,7 @@ class NegativeKeyword_args(object):
           self.keywordInfos = []
           (_etype10, _size7) = iprot.readListBegin()
           for _i11 in xrange(_size7):
-            _elem12 = domob_thrift.houyi_info_server_types.ttypes.KeywordInfo()
+            _elem12 = xxx_thrift.houyi_info_server_types.ttypes.KeywordInfo()
             _elem12.read(iprot)
             self.keywordInfos.append(_elem12)
           iprot.readListEnd()
@@ -663,7 +663,7 @@ class NegativeKeyword_result(object):
   """
 
   thrift_spec = (
-    (0, TType.STRUCT, 'success', (domob_thrift.houyi_info_server_types.ttypes.NegativeKeywordResopnse, domob_thrift.houyi_info_server_types.ttypes.NegativeKeywordResopnse.thrift_spec), None, ), # 0
+    (0, TType.STRUCT, 'success', (xxx_thrift.houyi_info_server_types.ttypes.NegativeKeywordResopnse, xxx_thrift.houyi_info_server_types.ttypes.NegativeKeywordResopnse.thrift_spec), None, ), # 0
   )
 
   def __init__(self, success=None,):
@@ -680,7 +680,7 @@ class NegativeKeyword_result(object):
         break
       if fid == 0:
         if ftype == TType.STRUCT:
-          self.success = domob_thrift.houyi_info_server_types.ttypes.NegativeKeywordResopnse()
+          self.success = xxx_thrift.houyi_info_server_types.ttypes.NegativeKeywordResopnse()
           self.success.read(iprot)
         else:
           iprot.skip(ftype)
@@ -726,8 +726,8 @@ class CampaignNegativeKeyword_args(object):
 
   thrift_spec = (
     None, # 0
-    (1, TType.STRUCT, 'reqHeader', (domob_thrift.houyi_common_types.ttypes.ReqHeader, domob_thrift.houyi_common_types.ttypes.ReqHeader.thrift_spec), None, ), # 1
-    (2, TType.LIST, 'keywordInfos', (TType.STRUCT,(domob_thrift.houyi_info_server_types.ttypes.KeywordInfo, domob_thrift.houyi_info_server_types.ttypes.KeywordInfo.thrift_spec)), None, ), # 2
+    (1, TType.STRUCT, 'reqHeader', (xxx_thrift.houyi_common_types.ttypes.ReqHeader, xxx_thrift.houyi_common_types.ttypes.ReqHeader.thrift_spec), None, ), # 1
+    (2, TType.LIST, 'keywordInfos', (TType.STRUCT,(xxx_thrift.houyi_info_server_types.ttypes.KeywordInfo, xxx_thrift.houyi_info_server_types.ttypes.KeywordInfo.thrift_spec)), None, ), # 2
     (3, TType.I32, 'operation', None, None, ), # 3
   )
 
@@ -747,7 +747,7 @@ class CampaignNegativeKeyword_args(object):
         break
       if fid == 1:
         if ftype == TType.STRUCT:
-          self.reqHeader = domob_thrift.houyi_common_types.ttypes.ReqHeader()
+          self.reqHeader = xxx_thrift.houyi_common_types.ttypes.ReqHeader()
           self.reqHeader.read(iprot)
         else:
           iprot.skip(ftype)
@@ -756,7 +756,7 @@ class CampaignNegativeKeyword_args(object):
           self.keywordInfos = []
           (_etype17, _size14) = iprot.readListBegin()
           for _i18 in xrange(_size14):
-            _elem19 = domob_thrift.houyi_info_server_types.ttypes.KeywordInfo()
+            _elem19 = xxx_thrift.houyi_info_server_types.ttypes.KeywordInfo()
             _elem19.read(iprot)
             self.keywordInfos.append(_elem19)
           iprot.readListEnd()
@@ -817,7 +817,7 @@ class CampaignNegativeKeyword_result(object):
   """
 
   thrift_spec = (
-    (0, TType.STRUCT, 'success', (domob_thrift.houyi_info_server_types.ttypes.CampaignNegativeKeywordResponse, domob_thrift.houyi_info_server_types.ttypes.CampaignNegativeKeywordResponse.thrift_spec), None, ), # 0
+    (0, TType.STRUCT, 'success', (xxx_thrift.houyi_info_server_types.ttypes.CampaignNegativeKeywordResponse, xxx_thrift.houyi_info_server_types.ttypes.CampaignNegativeKeywordResponse.thrift_spec), None, ), # 0
   )
 
   def __init__(self, success=None,):
@@ -834,7 +834,7 @@ class CampaignNegativeKeyword_result(object):
         break
       if fid == 0:
         if ftype == TType.STRUCT:
-          self.success = domob_thrift.houyi_info_server_types.ttypes.CampaignNegativeKeywordResponse()
+          self.success = xxx_thrift.houyi_info_server_types.ttypes.CampaignNegativeKeywordResponse()
           self.success.read(iprot)
         else:
           iprot.skip(ftype)
